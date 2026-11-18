@@ -3,6 +3,10 @@ img {
   height: auto;
 }
 
+.carousel {
+  position: relative;
+}
+
 .carousel__controls {
   display: flex;
   gap: 16px;
@@ -18,14 +22,42 @@ img {
   justify-content: center;
   border: 1px solid currentColor;
   border-radius: 50%;
+
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 10;
 }
 
 .carousel__button--prev {
- transform: rotate(180deg);
+  left: 10px;
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.carousel__button--next {
+  right: 10px;
+}
+
+.carousel__anchors {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  list-style: none;
+  padding: 0;
+  margin-top: 16px;
+}
+
+.carousel__anchors a {
+  display: inline-block;
+  padding: 4px 8px;
+  text-decoration: none;
+  border: 1px solid currentColor;
+  border-radius: 4px;
 }
 
 .carousel__container {
-   display: flex;
+  display: flex;
   gap: 16px;
   overflow-x: scroll; 
   margin-left: -24px;
