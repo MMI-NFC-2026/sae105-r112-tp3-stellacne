@@ -30,7 +30,8 @@ img {
   overflow-x: scroll; 
   margin-left: -24px;
   margin-right: -24px;
-  scroll-snap-type: x mandatory; 
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth; 
 }
 
 .carousel__item {
