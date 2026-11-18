@@ -34,7 +34,7 @@ img {
 }
 
 .carousel__item {
-  flex: 1 0 260px; 
+  flex: 1 0 75vw; 
   scroll-snap-align: center; 
 }
 
